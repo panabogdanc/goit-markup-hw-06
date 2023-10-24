@@ -625,6 +625,9 @@ header ul {
   height: 581px;
   border-radius: 4px;
   position: relative;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-close-btn {
