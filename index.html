@@ -79,8 +79,9 @@
             method="get"
             autocomplete="off"
           >
-            <!-- <fieldset class="form-group">
-          <legend class="form-group-title">Leave your information and we'll call you back</legend> -->
+            <h3 class="request-service-form-title">
+              Leave your information and we'll call you back
+            </h3>
             <div class="form-section">
               <label class="request-service-label" for="name" name="name"
                 >Name</label
@@ -126,15 +127,26 @@
               <label class="request-service-label" for="comm">Comments</label>
               <textarea id="comm" placeholder="Enter the text"></textarea>
             </div>
-            <!-- END -->
-            <p>I agree with the letter and accept the Terms and Conditions</p>
+
+            <label for="check" class="checkbox-container">
+              <input type="checkbox" class="checkbox-input" id="check" />
+              <span class="checkmark">
+                <svg class="check-mark">
+                  <use xlink:href="./images/icons.svg#icon-form-check"></use>
+                </svg>
+              </span>
+              <span class="label-text"
+                >I agree with the letter and accept the
+                <a class="terms" href="#"> Terms and Conditions</a>
+              </span>
+            </label>
+
             <div class="form-btn-container">
               <button class="request-service-btn" type="submit">Send</button>
             </div>
           </form>
         </div>
       </div>
-      <!-- END -->
 
       <section class="first-section">
         <div class="first-section-container">

@@ -665,6 +665,11 @@ header ul {
   gap: 10px;
 }
 
+.request-service-form-title {
+  margin: 0;
+  padding-left: 5px;
+}
+
 .form-group-title {
   border: none;
   margin: 0;
@@ -732,8 +737,60 @@ header ul {
   resize: none;
 }
 
+#comm:hover {
+  cursor: pointer;
+}
+
 #comm::placeholder {
   font-size: 12px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  padding-top: 12px;
+  padding-bottom: 22px;
+}
+
+.label-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--standard-gray);
+}
+
+.terms {
+  color: var(--standard-highlight-color);
+  text-decoration: underline;
+}
+
+.checkbox-input {
+  appearance: none;
+  position: absolute;
+}
+
+.checkmark {
+  display: inline-block;
+  border: 2px solid var(--standard-bg-color);
+  border-radius: 2px;
+  vertical-align: sub;
+}
+
+.check-mark {
+  display: block;
+  width: 16px;
+  height: 15px;
+}
+
+.checkbox-input:checked + .checkmark {
+  background-size: contain;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--standard-highlight-color);
+  border-color: var(--standard-highlight-color);
 }
 
 .form-btn-container {
