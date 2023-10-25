@@ -72,14 +72,65 @@
       <div class="modal is-hidden" data-modal>
         <div class="modal-content">
           <button class="modal-close-btn" data-modal-close>&times;</button>
-
-          <form action="" method="get" autocomplete="off">
-            <label for="name" name="name">Name</label>
-            <input type="text" id="name" placeholder="Insert name here:" />
-            <label for="age" name="age">Age</label>
-            <input type="number" id="age" min="1" max="150" />
-            <input type="email " />
-            <input type="submit" value="Send" />
+          <!-- FORM -->
+          <form
+            class="request-service-form"
+            action=""
+            method="get"
+            autocomplete="off"
+          >
+            <!-- <fieldset class="form-group">
+          <legend class="form-group-title">Leave your information and we'll call you back</legend> -->
+            <div class="form-section">
+              <label class="request-service-label" for="name" name="name"
+                >Name</label
+              >
+              <div class="input-container">
+                <input class="request-service-input" type="text" id="name" />
+                <svg>
+                  <use href="./images/icons.svg#icon-form-person"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form-section">
+              <label
+                class="request-service-label"
+                for="telephone"
+                name="telephone"
+                >Telephone</label
+              >
+              <div class="input-container">
+                <input
+                  class="request-service-input"
+                  type="tel"
+                  id="telephone"
+                  autofocus
+                />
+                <svg>
+                  <use href="./images/icons.svg#icon-form-phone"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form-section">
+              <label class="request-service-label" for="email" name="email"
+                >E-mail</label
+              >
+              <div class="input-container">
+                <input class="request-service-input" type="email" id="email" />
+                <svg>
+                  <use href="./images/icons.svg#icon-form-email"></use>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <label class="request-service-label" for="comm">Comments</label>
+              <textarea id="comm" placeholder="Enter the text"></textarea>
+            </div>
+            <!-- END -->
+            <p>I agree with the letter and accept the Terms and Conditions</p>
+            <div class="form-btn-container">
+              <button class="request-service-btn" type="submit">Send</button>
+            </div>
           </form>
         </div>
       </div>
