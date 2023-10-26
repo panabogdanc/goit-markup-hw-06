@@ -5,6 +5,7 @@
   --standard-bg-color: #2f303a;
   --standard-highlight-color: #2196f3;
   --standard-gray: #757575;
+  --standard-transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -815,4 +816,75 @@ header ul {
 .request-service-btn:hover,
 .request-service-btn:focus {
   background: rgba(24, 140, 232, 1);
+}
+
+/* Styles for footer-subscribe form */
+
+.subscribe-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 93px;
+}
+
+.subscribe-title {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
+.input-btn-container {
+  display: flex;
+  gap: 12px;
+}
+
+.subscribe-input {
+  width: 358px;
+  height: 50px;
+  outline: none;
+  background-color: var(--standard-bg-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  padding-left: 16px;
+}
+
+.subscribe-input:focus {
+  border-color: var(--standard-highlight-color);
+}
+
+.subscribe-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(33, 150, 243, 1);
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  transition: background-color 250ms var(--standard-transition);
+}
+
+.subscribe-btn:hover {
+  background-color: rgba(24, 140, 232, 1);
+  cursor: pointer;
+}
+
+.subscribe-btn-send-svg-container {
+  position: relative;
+}
+.send-svg {
+  width: 24px;
+  height: 24px;
 }
